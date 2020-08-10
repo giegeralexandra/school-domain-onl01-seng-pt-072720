@@ -4,10 +4,8 @@ class School
     roster = {}
   end
   
-  def add_student=(student)
+  def add_student=(name)
   end
-  
-  
   
   attr_reader :name 
   attr_accessor :grade
