@@ -21,7 +21,9 @@ class School
   end
   
   def sort 
-    @roster.sort 
+    @roster.collect do |array|
+      array.sort 
+    end
   end
     
 end
