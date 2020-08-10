@@ -7,8 +7,12 @@ class School
   def add_student(name, grade)
     @name = name 
     @grade = grade
-    @roster[grade] = []
-    @roster[grade] << name 
+    if @roster.include?(grade) == false 
+      @roster = [] 
+      @roster[grade] << name 
+    else
+      @roster[grade] << name 
+    end
   end
   
   attr_reader :name, :grade, :roster
