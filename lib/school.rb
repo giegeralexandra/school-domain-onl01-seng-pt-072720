@@ -25,7 +25,7 @@ class School
       roster.sort do |a,b|
         a<=>b 
       end
-      roster.to_a_h
+      roster.to_h
     end
   end
     
