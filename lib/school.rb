@@ -7,8 +7,8 @@ class School
   def add_student(name, grade)
     @name = name 
     @grade = grade
-    @roster.collect do |name, grade|
-      "#{name}"
+    @roster[name] = []
+    @roster[name] << grade 
   end
   
   attr_reader :name, :grade 
