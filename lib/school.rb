@@ -11,6 +11,6 @@ class School
     @roster[name] << grade 
   end
   
-  attr_reader :name, :grade 
+  attr_reader :name, :grade, :roster
   
 end
