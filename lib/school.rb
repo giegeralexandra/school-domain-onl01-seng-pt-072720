@@ -22,11 +22,11 @@ class School
   
   def sort 
       @roster.collect do |grade, roster|
-      roster.sort do |a,b|
-        a<=>b 
+        roster.sort do |a,b|
+          a<=>b 
+        end
       end
       roster.to_h
-    end
   end
     
 end
