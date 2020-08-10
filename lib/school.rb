@@ -21,12 +21,7 @@ class School
   end
   
   def sort 
-    sorted_roster = {}
-    @roster.sort do |grade,roster|
-      roster.sort do |a,b|
-        a<=>b
-      end
-    end
+    sorted_roster = @roster.sort
   end
     
 end
