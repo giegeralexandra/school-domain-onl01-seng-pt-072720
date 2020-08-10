@@ -21,12 +21,11 @@ class School
   end
   
   def sort 
-      @roster.collect do |grade, roster|
+      @roster.collect.to_h do |grade, roster|
         roster.sort do |a,b|
           a<=>b 
         end
       end
-      roster.to_h
   end
     
 end
