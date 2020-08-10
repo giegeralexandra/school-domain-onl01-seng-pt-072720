@@ -17,8 +17,9 @@ class School
   end
   
   def grade(grade)
-    @grade = grade 
+    puts grade 
   end
+
     
   
 end
