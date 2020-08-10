@@ -21,8 +21,11 @@ class School
   end
   
   def sort 
-    @roster[grade].each.sort |a,b|
-      a<=>b
+      @roster.collect do |grade, roster|
+      roster.sort do |a,b|
+        a<=>b 
+      end
+      roster.to_a_h
     end
   end
     
