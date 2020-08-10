@@ -23,8 +23,8 @@ class School
   def sort 
     sorted_roster = @roster.sort
     sorted_roster.collect do |grade, roster|
-      grade => roster.sort do |a,b|
-        a<=>b 
+      roster.sort do |a,b|
+      a<=>b 
       end 
     end
   end
