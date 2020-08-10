@@ -9,6 +9,6 @@ class School
     @grade = grade
   end
   
-  attr_reader :name :grade 
+  attr_reader :name, :grade 
   
 end
